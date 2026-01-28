@@ -9,6 +9,8 @@
 	.\touchpad.ps1 -Action Set -Level HIGH_SENSITIVITY -Broadcast
 #>
 
+# Full disclosure, this file was created with some assistance from ChatGPT.
+
 param(
 	[Parameter(Mandatory = $true)]
 	[ValidateSet("Get", "Set", IgnoreCase = $true)]
@@ -220,3 +222,4 @@ if ($Action -eq "Set") {
 
 	exit
 }
+
